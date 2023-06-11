@@ -6,16 +6,6 @@ const api = axios.create({
   withCredentials: true, // 允许携带跨域请求的凭证
 })
 
-<<<<<<< HEAD
-export {
-    userLogin,
-    adminLogin,
-    adCatePage,
-    adCateDelId,
-    adCateAdd,
-    adCateEdit
-} 
-=======
 // 添加请求拦截器
 api.interceptors.request.use(
   (config) => {
@@ -41,4 +31,3 @@ api.interceptors.response.use(
 )
 
 export default api
->>>>>>> a5dd1a8bdfb31291488ee6f9385ce387e1602478

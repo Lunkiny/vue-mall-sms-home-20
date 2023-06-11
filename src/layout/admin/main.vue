@@ -10,9 +10,6 @@
             <div class="flex-grow" />
             <el-sub-menu index="1">
                 <template #title>管理员</template>
-                <el-menu-item index="2-1">返回首页</el-menu-item>
-                <el-menu-item index="2-2">安全退出</el-menu-item>
-                <el-menu-item index="2-3">用户信息</el-menu-item>
             </el-sub-menu>
         </el-menu>
         <RouterView :key="key"></RouterView>

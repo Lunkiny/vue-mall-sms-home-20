@@ -6,16 +6,21 @@
                     <el-icon>
                         <Platform />
                     </el-icon>
-                    <span>智慧校园平台</span>
+                    <span>首页热点模块</span>
                 </template>
-                <el-menu-item-group title="管理中心">
-                    <el-menu-item index="/admin">首页</el-menu-item>
-                    <el-menu-item index="/admin/info">管理员信息</el-menu-item>
+                <el-menu-item-group title="管理员">
+                    <el-menu-item index="/smsHomeAdvertise">首页广告</el-menu-item>
+                    <el-menu-item index="/sms-home-brand">首页热销品牌</el-menu-item>
+                    <el-menu-item index="/sms-home-new-product">首页促销商品</el-menu-item>
+                    <el-menu-item index="/sms-home-recommend-product">首页新品</el-menu-item>
+                    <el-menu-item index="/sms-home-recommend-subject">首页推荐主题</el-menu-item>
                 </el-menu-item-group>
-                <el-menu-item-group title="安全中心">
-                    <el-menu-item index="/admin/changepassword">修改密码</el-menu-item>
-                    <el-menu-item index="/admin/logout">安全登出</el-menu-item>
-                    <el-menu-item index="/admin/forgetpassword">忘记密码</el-menu-item>
+                <el-menu-item-group title="用户">
+                    <el-menu-item index="/smsview">查看首页广告</el-menu-item>
+                    <el-menu-item index="/userbrand">查看首页热销品牌</el-menu-item>
+                    <el-menu-item index="/userproduct">查看首页促销商品</el-menu-item>
+                    <el-menu-item index="/usernew">查看首页新品</el-menu-item>
+                    <el-menu-item index="/usersubject">查看首页推荐主题</el-menu-item>
                 </el-menu-item-group>
                 
             </el-sub-menu>
@@ -26,18 +31,12 @@
 <script>
 import { defineComponent } from "vue"
 import {
-    Platform,
     Document,
     Menu,
     Location,
     Setting,
 } from '@element-plus/icons-vue'
-export default defineComponent({
-    data(){
-        return{
-            isCollapse:true
-        }
-    },
+export default defineComponent({ 
     methods: {
         handleOpen(key, keyPath) {
             console.log(key, keyPath)
